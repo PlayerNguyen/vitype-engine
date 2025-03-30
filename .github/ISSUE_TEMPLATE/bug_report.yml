@@ -1,0 +1,79 @@
+name: "🐛 Bug Report"
+description: "Báo cáo lỗi hoặc sự cố trong ứng dụng"
+title: "[Bug] Mô tả lỗi ngắn gọn"
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "### 🐞 Mô tả lỗi\nMô tả lỗi bạn đang gặp phải."
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "✅ Expected behavior"
+      description: "Mô tả hành vi mong muốn của ứng dụng"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "❌ Actual behavior"
+      description: "Mô tả hành vi thực tế xảy ra"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### 📊 Thông tin hệ thống"
+
+  - type: input
+    id: app-version
+    attributes:
+      label: "📌 Phiên bản ứng dụng"
+      placeholder: "x.y.z"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "🖥 Hệ điều hành"
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: "🔢 Phiên bản OS"
+      placeholder: "10/11/12..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cpu-arch
+    attributes:
+      label: "⚙️ Kiến trúc CPU"
+      options:
+        - x86_64
+        - ARM64
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🔁 Các bước để tái hiện lỗi"
+      description: "1. Đi đến '...'\n2. Bấm vào '...'\n3. Quan sát lỗi xảy ra"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📸 Screenshot hoặc Log (nếu có)"
+      description: "Nếu có ảnh chụp màn hình hoặc log, hãy đính kèm."

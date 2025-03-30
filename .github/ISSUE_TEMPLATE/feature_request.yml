@@ -1,0 +1,69 @@
+name: "✨ Feature Request"
+description: "Đề xuất một tính năng mới hoặc cải tiến"
+title: "[Feature] Mô tả tính năng ngắn gọn"
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "### 🚀 Mô tả tính năng\nMô tả tính năng bạn đề xuất."
+
+  - type: textarea
+    id: feature-reason
+    attributes:
+      label: "🎯 Lý do bổ sung tính năng"
+      description: "Tại sao tính năng này cần thiết? Nó sẽ giúp ích như thế nào?"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### 📊 Thông tin hệ thống"
+
+  - type: input
+    id: app-version
+    attributes:
+      label: "📌 Phiên bản ứng dụng"
+      placeholder: "x.y.z"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "🖥 Hệ điều hành"
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: "🔢 Phiên bản OS"
+      placeholder: "10/11/12..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cpu-arch
+    attributes:
+      label: "⚙️ Kiến trúc CPU"
+      options:
+        - x86_64
+        - ARM64
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: "🛠 Giải pháp đề xuất"
+      description: "Bạn có đề xuất cách triển khai hoặc giải pháp không?"
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: "🔗 Liên quan (nếu có)"
+      description: "Liệt kê các issue hoặc PR liên quan."
