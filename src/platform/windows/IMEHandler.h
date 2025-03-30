@@ -1,6 +1,11 @@
 #ifndef IME_HANDLER_H
 #define IME_HANDLER_H
 
+/**
+ * This handler is only for Windows System input. Otherwise, just ignore
+ * this file.
+ */
+#ifdef _WIN32
 #include "CWrapper.h"
 #include <windows.h>
 
@@ -15,5 +20,7 @@ private:
   ConverterHandle converter;
   std::wstring buffer;
 };
+
+#endif
 
 #endif
