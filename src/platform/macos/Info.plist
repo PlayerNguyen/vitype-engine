@@ -1,0 +1,9 @@
+<key>TSMInputMethodBundle</key>
+<dict>
+    <key>InputMethod</key>
+    <string>Vitype</string>
+    <key>TSMInputMode</key>
+    <array>
+        <string>com.vitype.inputmethod</string>
+    </array>
+</dict>
